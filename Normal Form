@@ -1,1 +1,33 @@
 We Did 3NF 
+
+
+Users Table:
+This table contains potential transitive dependencies. Columns like user_country, Address, 
+and Relationship could be further normalized to achieve 3rd Normal Form (3NF). Breaking down these 
+attributes into separate tables and linking them through foreign keys referencing the user_id could eliminate 
+these transitive dependencies.
+
+Posts Table:
+This table seems to be in 3rd Normal Form (3NF) as it stands. There don't seem to be any apparent transitive dependencies.
+
+Comments Table:
+This table also appears to be in 3rd Normal Form (3NF) as it stands. There don't seem to be any apparent transitive dependencies.
+
+User_Messages Table:
+Similarly, this table seems to be in 3rd Normal Form (3NF) as it stands. There don't seem to be any apparent transitive dependencies.
+
+Post_Likes Table:
+This table also seems to be in 3rd Normal Form (3NF) as it stands. There don't seem to be any apparent transitive dependencies.
+
+
+Upon reevaluation, it seems that with the given information, the Posts, Comments, User_Messages, and Post_Likes tables 
+appear to be in 3rd Normal Form. However, the Users table could benefit from further normalization to eliminate transitive 
+dependencies and fully adhere to 3NF principles. Specifically, considering separating out related data (like user_country, 
+Address, and Relationship) into separate tables linked by the user_id.
+
+
+
+
+
+
+
